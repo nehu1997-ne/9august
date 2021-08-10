@@ -1,0 +1,44 @@
+
+<html>
+	<head>
+		<script>
+			// function Palnum()
+			// {
+			// 	var rem, temp, final = 0;
+			// 	var number = Number(document.getElementById("N").value);
+
+			// 	temp = number;
+			// 	while(number>0)
+			// 	{
+			// 		rem = number%10;
+			// 		number = parseInt(number/10);
+			// 		final = final*10+rem;
+			// 	}
+			// 	if(final==temp)
+			// 	{
+			// 		window.alert("number is Palindrome");
+			// 	}
+			// 	else
+			// 	{
+			// 		window.alert("number is not palindrome");
+			// 	}
+			// }
+			var string =prompt("please enter a string");
+			var len= string.length;
+			var msg ="it is a palidrome";
+			for(var i=0; i < len/2 ; i++){
+				if(string[i] !=string[len - 1- i]){
+
+				msg="this is not a palidrome";
+				}
+			}
+		console.log(`${string}: ${msg}`);
+		</script>
+	</head>
+	<!-- <body>
+		<br>
+		<h1>Check Whether a number is Palindrome or not</h1>
+		Enter The Number :<input type="text" name="n" id = "N"/>
+   <button onClick="Palnum()">submit</button>
+	</body> -->
+</html>
